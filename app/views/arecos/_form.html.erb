@@ -1,0 +1,136 @@
+<%= form_for(@areco) do |f| %>
+<% if @areco.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@areco.errors.count, "error") %> prohibited this areco from being saved:</h2>
+
+  <ul>
+    <% @areco.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+
+<div class="tabbable"> 
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#Auditor" data-toggle="tab">Auditor</a></li>
+    <li><a href="#Auditee" data-toggle="tab">Auditee</a></li>
+    <li><a href="#Dependency" data-toggle="tab">Dependency</a></li>
+    <li><a href="#Documents" data-toggle="tab">Documents</a></li>
+    <li><a href="#Compliance" data-toggle="tab">Compliance</a></li>
+  </ul>
+  <div class="tab-content">
+
+    <!-- start of auditor -->
+    <div class="tab-pane active" id="Auditor">
+      <form class="well span8">
+       <div class="row">
+        <div class="span3">
+          <%= f.label :Title %>
+          <%= f.text_field :Title %>
+          <%= f.label :status %>
+          <%= f.text_field :status %>
+          <%= f.label :reference %>
+          <%= f.text_field :reference %>
+          <%= f.label :primary %>
+          <%= f.text_field :primary %>
+          <%= f.label :secondary %>
+          <%= f.text_field :secondary %>
+          <%= f.label :compliance %>
+          <%= f.text_field :compliance %>
+        </div>
+        <div class="span5>"
+          <%= f.label :auditor %>
+          <textarea name="message" id="message" class="input-xlarge span5" rows="5"></textarea>
+
+          <%= f.label :priority %>
+          <%= f.text_field :priority %>
+          <%= f.label :severity %>
+          <%= f.text_field :severity %>
+          <%= f.label :verification %>
+          <%= f.text_field :verification %>
+          <%= f.label :target %>
+          <%= f.date_select :target %>
+          <%= f.label :closed %>
+          <%= f.date_select :closed %>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- end of auditor -->
+  <!-- start of auditee -->
+  <div class="tab-pane" id="Auditee">
+    <%= f.label :Atitle %>
+    <%= f.text_field :Atitle %>
+    <%= f.label :auditee %>
+    <%= f.text_field :auditee %>
+    <%= f.label :apriority %>
+    <%= f.text_field :apriority %>
+    <%= f.label :aseverity %>
+    <%= f.text_field :aseverity %>
+    <%= f.label :atartget %>
+    <%= f.date_select :atartget %>
+  </div>
+  <!-- end of auditee -->
+  <div class="tab-pane" id="Dependency">
+    <%= f.label :Dtitle %>
+    <%= f.text_field :Dtitle %>
+    <%= f.label :duplicate %>
+    <%= f.text_field :duplicate %>
+    <%= f.label :blocked %>
+    <%= f.text_field :blocked %>
+    <%= f.label :refer %>
+    <%= f.text_field :refer %>
+    <%= f.label :dependent %>
+    <%= f.text_field :dependent %>
+    <%= f.label :dreference %>
+    <%= f.text_field :dreference %>
+  </div>
+
+  <!-- end of dependency -->
+  <div class="tab-pane" id="Documents">
+
+    <%= f.label :ddtitle %>
+    <%= f.text_field :ddtitle %>
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+    <%= f.label :verified %>
+    <%= f.text_field :verified %>
+    <%= f.label :confidential %>
+    <%= f.text_field :confidential %>
+    <%= f.label :dtype %>
+    <%= f.text_field :dtype %>
+  </div>
+
+  <!-- end of documents -->
+  <div class="tab-pane" id="Compliance">
+
+
+    <%= f.label :Ctitle %>
+    <%= f.text_field :Ctitle %>
+
+    <%= f.label :org %>
+    <%= f.text_field :org %>
+
+    <%= f.label :level %>
+    <%= f.text_field :level %>
+
+    <%= f.label :ctarget %>
+    <%= f.text_field :ctarget %>
+
+    <%= f.label :compliancetype %>
+    <%= f.text_field :compliancetype %>
+
+    <%= f.label :kind %>
+    <%= f.text_field :kind %>
+
+  </div>
+<div class="actions">
+  <%= f.submit "Create"%>
+</div>
+</div>
+</div>
+
+<% end %>

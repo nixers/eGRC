@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  reference: MyString
+  description: MyString
+  category: MyString
+  exp_for_eval: MyString
+  exp_ans_type: MyString
+
+two:
+  reference: MyString
+  description: MyString
+  category: MyString
+  exp_for_eval: MyString
+  exp_ans_type: MyString

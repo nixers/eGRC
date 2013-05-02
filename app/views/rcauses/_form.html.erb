@@ -1,0 +1,53 @@
+<%= form_for(@rcause) do |f| %>
+  <% if @rcause.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rcause.errors.count, "error") %> prohibited this rcause from being saved:</h2>
+
+      <ul>
+      <% @rcause.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :reference %><br />
+    <%= f.text_field :reference %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :period %><br />
+    <%= f.number_field :period %>
+  </div>
+  <div class="field">
+    <%= f.label :likelihood %><br />
+    <%= f.text_field :likelihood %>
+  </div>
+  <div class="field">
+    <%= f.label :probability %><br />
+    <%= f.text_field :probability %>
+  </div>
+  <div class="field">
+    <%= f.label :occurence_count %><br />
+    <%= f.number_field :occurence_count %>
+  </div>
+  <div class="field">
+    <%= f.label :horizon_start_date %><br />
+    <%= f.text_field :horizon_start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :horizon_end_date %><br />
+    <%= f.text_field :horizon_end_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

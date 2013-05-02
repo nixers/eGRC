@@ -1,0 +1,30 @@
+<%= render :partial => 'layouts/header' %>
+<br />
+<br />
+<div class="span9 offset1 well">
+<legend>View Report</legend>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @areport.Title %>
+</p>
+<p>
+  <b>Status:</b>
+  <%= @areport.Status %>
+</p>
+
+<p>
+  <b>Recommendations:</b>
+  <%= @areport.Recommendations %>
+</p>
+
+<p>
+  <b>Actions:</b>
+  <%= @areport.Actions %>
+</p>
+
+
+<%= link_to 'Edit', edit_areport_path(@areport) %> |
+<%= link_to 'Back', areports_path %>
+</div>

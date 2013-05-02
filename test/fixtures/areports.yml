@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Title: MyString
+  Summary: MyString
+  Source: MyString
+  Duedate: MyString
+  Status: MyString
+  Recommendations: 1
+  Actions: 1
+
+two:
+  Title: MyString
+  Summary: MyString
+  Source: MyString
+  Duedate: MyString
+  Status: MyString
+  Recommendations: 1
+  Actions: 1

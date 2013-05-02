@@ -1,0 +1,60 @@
+<%= render :partial => 'layouts/header' %>
+<br />
+<br />
+<div class="span12 offset1 well">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @policy.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @policy.description %>
+</p>
+
+<p>
+  <b>Keyword:</b>
+  <%= @policy.keyword %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @policy.author %>
+</p>
+
+<p>
+  <b>Class:</b>
+  <%= @policy.class %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @policy.type %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%= @policy.area %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @policy.version %>
+</p>
+
+<p>
+  <b>Publishdate:</b>
+  <%= @policy.publishdate %>
+</p>
+
+<p>
+  <b>Revision:</b>
+  <%= @policy.revision %>
+</p>
+
+
+<%= link_to 'Edit', edit_policy_path(@policy) %> |
+<%= link_to 'Back', policies_path %>
+</div>

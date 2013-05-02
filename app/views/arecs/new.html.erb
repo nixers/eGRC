@@ -1,0 +1,161 @@
+ <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="myModalLabel">New Recommendation</h3>
+</div>
+<div class="modal-body">
+      <div class="tabbable tabs-left"> 
+    <ul class="nav nav-tabs">
+    <li class="active"><a href="#Auditor" data-toggle="tab">Auditor</a></li>
+    <li><a href="#Auditee" data-toggle="tab">Auditee</a></li>
+    <li><a href="#Compliance" data-toggle="tab">Compliance</a></li>
+    <li><a href="#Dependency" data-toggle="tab">Dependency</a></li>
+    <li><a href="#Document" data-toggle="tab">Documents</a></li>
+  </ul>
+    <div class="tab-content">
+    <div class="tab-pane active" id="Auditor">
+    <form class="well span7">
+    <div class="row">
+    <div class="span3">
+    <label>Title</label>
+    <input type="text" class="span3" placeholder="Title for Recommendations">
+    <label>Recommendations Status </label>
+    <select id="subject" name="subject" class="span3">
+    <option value="na" selected="">Choose One:</option>
+    <option value="service">General Customer Service</option>
+    <option value="suggestions">Suggestions</option>
+    <option value="product">Product Support</option>
+    </select>
+    <label>Reference</label>
+    <input type="text" class="span3" placeholder="Reference">
+    <label>Auditor Recommendation</label>
+    <textarea name="message" id="message" class="input-xlarge span5" rows="10"></textarea>
+     <label>Primary Topic</label>
+    <select id="subject" name="subject" class="span3">
+    <option value="na" selected="">Choose One:</option>
+    <option value="service">General Customer Service</option>
+    <option value="suggestions">Suggestions</option>
+    <option value="product">Product Support</option>
+    </select>
+    <label>Secondary Topic</label>
+    <select id="subject" name="subject" class="span3">
+    <option value="na" selected="">Choose One:</option>
+    <option value="service">General Customer Service</option>
+    <option value="suggestions">Suggestions</option>
+    <option value="product">Product Support</option>
+    </select>
+    <label>Verification</label>
+    <select id="subject" name="subject" class="span3">
+    <option value="Document" selected="">Document</option>
+    <option value="insuite">In Suite</option>
+    </select>
+    <label>Priority</label>
+    <select id="subject" name="subject" class="span3">
+    <option value="Document" selected="">Document</option>
+    <option value="insuite">In Suite</option>
+    </select>
+    <label>Severity</label>
+    <select id="subject" name="subject" class="span3">
+    <option value="Document" selected="">Document</option>
+    <option value="insuite">In Suite</option>
+    </select>
+    </div>
+    </div>
+    </form>
+    </div>
+    <div class="tab-pane" id="Auditee">
+      <form class="well span7">
+    <div class="row">
+    <div class="span3">
+    <label>Title</label>
+    <input type="text" class="span3" placeholder="Title for Recommendations">
+    <label>Auditee Answer</label>
+    <textarea name="message" id="message" class="input-xlarge span5" rows="10"></textarea>
+    <label>Priority</label>
+    <select id="subject" name="subject" class="span3">
+    <option value="Document" selected="">Document</option>
+    <option value="insuite">In Suite</option>
+    </select>
+    <label>Severity</label>
+    <select id="subject" name="subject" class="span3">
+    <option value="Document" selected="">Document</option>
+    <option value="insuite">In Suite</option>
+    </select>
+    </div>
+    </div>
+    </form>
+    </div>
+    <div class="tab-pane" id="Compliance">
+      <form class="well span7">
+    <div class="row">
+    <div class="span3">
+      Compliance form 
+    </div>
+    </div>
+    </form>
+    </div>
+<div class="tab-pane" id="Dependency">
+      <form class="well span7">
+    <div class="row">
+    <div class="span3">
+    <label>Add Blocking Documentaion</label>
+    <select id="subject" name="subject" class="span3">
+    <option value="Document" selected="">Document</option>
+    <option value="insuite">In Suite</option>
+    </select>
+    <label>Add Dependent Recommendation</label>
+    <select id="subject" name="subject" class="span3">
+    <option value="Document" selected="">Document</option>
+    <option value="insuite">In Suite</option>
+    </select>
+    <label>Add Duplicate Recommendation</label>
+    <select id="subject" name="subject" class="span3">
+    <option value="Document" selected="">Document</option>
+    <option value="insuite">In Suite</option>
+    </select>
+    <label>Add Reference Recommendation</label>
+    <select id="subject" name="subject" class="span3">
+    <option value="Document" selected="">Document</option>
+    <option value="insuite">In Suite</option>
+    </select>
+    </div>
+    </div>
+    </form>
+    </div>
+    <div class="tab-pane" id="Document">
+      <form class="well span7">
+    <div class="row">
+    <div class="span3">
+      <form>
+    <label>Title</label>
+    <input type="text" class="span3" placeholder="Title for Documents">
+    <label>Descriptions</label>
+    <textarea name="message" id="message" class="input-xlarge span5" rows="10"></textarea>
+    <label>Confidentiality</label>
+    <select id="subject" name="subject" class="span3">
+    <option value="Document" selected="">Internal</option>
+    <option value="insuite">Confidential</option>
+    <option value="insuite">Sponsers Only</option>
+    <option value="insuite">Company Private</option>
+    </select>
+    <label>Type</label>
+    <select id="subject" name="subject" class="span3">
+    <option value="Document" selected="">Evidence</option>
+    <option value="insuite">Information</option>
+    <option value="insuite">Email</option>
+    <option value="insuite">Documents</option>
+    </select>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+</div>
+<div class="modal-footer">
+<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+<button class="btn btn-primary">Save</button>
+</div>
+</div>
+</div>
+</div>

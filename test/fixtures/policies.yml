@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  keyword: MyString
+  author: MyString
+  class: MyString
+  type: 
+  area: MyString
+  version: MyString
+  publishdate: MyString
+  revision: MyString
+
+two:
+  name: MyString
+  description: MyString
+  keyword: MyString
+  author: MyString
+  class: MyString
+  type: 
+  area: MyString
+  version: MyString
+  publishdate: MyString
+  revision: MyString

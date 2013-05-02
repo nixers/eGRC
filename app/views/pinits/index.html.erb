@@ -1,0 +1,47 @@
+<%= render :partial => 'layouts/header' %>
+<br />
+<br />
+  <div class="row">
+    <div class="span12 offset1 well">
+<h1>Policies</h1>
+
+<table class="table">
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Keyword</th>
+    <th>Author</th>
+    <th>Class</th>
+    <th>Type</th>
+    <th>Area</th>
+    <th>Version</th>
+    <th>Publishdate</th>
+    <th>Revision</th>
+  </tr>
+
+<% @pinits.each do |pinit| %>
+  <tr>
+    <td><%= pinit.name %></td>
+    <td><%= pinit.description %></td>
+    <td><%= pinit.keyword %></td>
+    <td><%= pinit.author %></td>
+    <td><%= pinit.class %></td>
+    <td><%= pinit.type %></td>
+    <td><%= pinit.area %></td>
+    <td><%= pinit.version %></td>
+    <td><%= pinit.publishdate %></td>
+    <td><%= pinit.revision %></td>
+    <td><%= link_to 'Show', pinit , :class => "icon-list-alt icon-white"%></td>
+    <td><%= link_to 'Edit', edit_pinit_path(pinit), :class => "icon-pencil icon-white" %></td>
+    <td><%= link_to 'Destroy', pinit,:class =>"icon-trash icon-white", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<%= button_to "New",new_pinit_path, :method => :get, :class => "btn btn-primary" %>
+
+
+</div>
+</div>

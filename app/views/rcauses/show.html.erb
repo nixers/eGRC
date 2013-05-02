@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @rcause.title %>
+</p>
+
+<p>
+  <b>Reference:</b>
+  <%= @rcause.reference %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @rcause.description %>
+</p>
+
+<p>
+  <b>Period:</b>
+  <%= @rcause.period %>
+</p>
+
+<p>
+  <b>Likelihood:</b>
+  <%= @rcause.likelihood %>
+</p>
+
+<p>
+  <b>Probability:</b>
+  <%= @rcause.probability %>
+</p>
+
+<p>
+  <b>Occurence count:</b>
+  <%= @rcause.occurence_count %>
+</p>
+
+<p>
+  <b>Horizon start date:</b>
+  <%= @rcause.horizon_start_date %>
+</p>
+
+<p>
+  <b>Horizon end date:</b>
+  <%= @rcause.horizon_end_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_rcause_path(@rcause) %> |
+<%= link_to 'Back', rcauses_path %>
+

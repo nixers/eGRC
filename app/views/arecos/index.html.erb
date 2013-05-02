@@ -1,0 +1,35 @@
+<%= render :partial => 'layouts/header' %>
+<br />
+<br />
+  <div class="row">
+    <div class="span11 offset1 well">
+      <h3>Audit Management</h3>
+      <legend>Recommendations</legend>
+
+      <table class="table">
+        <tr>
+          <th>Title</th>
+          <th>Auditor</th>
+          <th>Auditee</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+
+        <% @arecos.each do |areco| %>
+        <tr>
+          <td><%= areco.Title %></td>
+          <td><%= areco.auditor %></td>
+          <td><%= areco.auditee %></td>
+          <td><%= link_to '', areco,:class => "icon-list-alt icon-white", :title => "View" %></td>
+          <td><%= link_to '', areco, method: :delete, data: { confirm: 'Are you sure?' }, :class =>"icon-trash icon-white", :title => "Delete" %></td>
+          <td><%= link_to '', aactios_path, :class => "icon-play icon-white", :title => "Goto Actions"%>
+          </tr>
+          <% end %>
+        </table>
+
+        <br />
+
+        <%= button_to "New", new_areco_path, :method => :get, :class => "btn btn-primary" %>
+      </div>
+    </div>

@@ -1,0 +1,56 @@
+<%= render :partial => 'layouts/header' %>
+<br />
+<br />
+<!-- <div class="container"> -->
+
+  <div class="row">
+    <div class="span11 offset1 well">
+      <h3>Risk Management</h3>
+      <legend>Groups</legend>
+
+      <table class="table">
+        <tr>
+          <th>Group Name</th>
+          <th>Description</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+
+        <% @rgroups.each do |rgroup| %>
+        <tr>
+          <td><%= rgroup.group_name %></td>
+          <td><%= rgroup.description %></td>
+          <td><%= link_to '', rgroup, :class =>"icon-list-alt icon-white" %></td>
+          <td><%= link_to '', edit_rgroup_path(rgroup), :class => "icon-pencil icon-white" %></td>
+          <td><%= link_to '', rgroup, method: :delete, data: { confirm: 'Are you sure?' }, :class => "icon-trash icon-white" %></td>
+        </tr>
+        <% end %>
+      </table>
+
+      <br />
+
+      <%= link_to 'New', new_rgroup_path %>
+
+    </div>
+
+
+
+    <div class="row">
+      <div class="span2 offset well">        
+        <legend>Quick Links</legend>
+        <p>
+          <%= link_to 'Criteria', rcrievals_path %> <br />          
+        </p>        
+      </div>
+
+      <div class="span2 offset well">        
+        <legend>Goto</legend>
+        <p>
+          <%= button_to "Risks Modelisation", rinits_path, :method => :get, :class => "btn btn-success" %>          
+        </p>        
+      </div>
+    </div>
+  </div>
+
+<!-- </div> -->

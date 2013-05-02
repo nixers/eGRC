@@ -1,0 +1,35 @@
+<div class="span9 offset1 well">
+<legend>View Criterion</legend>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Reference:</b>
+  <%= @rcrieval.reference %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @rcrieval.description %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @rcrieval.category %>
+</p>
+
+<p>
+  <b>Exp for eval:</b>
+  <%= @rcrieval.exp_for_eval %>
+</p>
+
+<p>
+  <b>Exp ans type:</b>
+  <%= @rcrieval.exp_ans_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_rcrieval_path(@rcrieval) %> |
+<%= link_to 'Back', rcrievals_path %>
+
+</div>

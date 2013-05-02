@@ -1,0 +1,55 @@
+<div class="span9 offset1 well">
+<legend>View Risk</legend>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @rinit.title %>
+</p>
+
+<p>
+  <b>Reference:</b>
+  <%= @rinit.reference %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @rinit.description %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @rinit.category %>
+</p>
+
+<p>
+  <b>Review period:</b>
+  <%= @rinit.review_period %>
+</p>
+
+<p>
+  <b>Forced review:</b>
+  <%= @rinit.forced_review %>
+</p>
+
+<p>
+  <b>Likelihood:</b>
+  <%= @rinit.likelihood %>
+</p>
+
+<p>
+  <b>Standard:</b>
+  <%= @rinit.standard %>
+</p>
+
+<p>
+  <b>Expiration date:</b>
+  <%= @rinit.expiration_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_rinit_path(@rinit) %> |
+<%= link_to 'Back', rinits_path %>
+
+</div>

@@ -1,0 +1,57 @@
+<%= render :partial => 'layouts/header' %>
+<br />
+<br />
+<!-- <div class="container"> -->
+
+  <div class="row">
+    <div class="span11 offset1 well">
+
+<h3>Risks Management</h3>
+<legend>Criteria</legend>
+
+<table class="table">
+  <tr>
+    <th>Criterion</th>
+    <th>Description</th>
+    <th>Category</th>    
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @rcrievals.each do |rcrieval| %>
+  <tr>
+    <td><%= rcrieval.reference %></td>
+    <td><%= rcrieval.description %></td>
+    <td><%= rcrieval.category %></td>    
+    <td><%= link_to '', rcrieval, :class => "icon-list-alt icon-white" %></td>
+    <td><%= link_to '', edit_rcrieval_path(rcrieval), :class => "icon-pencil icon-white"  %></td>
+    <td><%= link_to '', rcrieval, method: :delete, data: { confirm: 'Are you sure?' }, :class => "icon-trash icon-white" %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Rcrieval', new_rcrieval_path %>
+
+</div>
+
+<div class="row">
+      <div class="span2 offset well">        
+        <legend>Quick Links</legend>
+        <p>
+          <%= link_to 'Groups', rgroups_path %> <br />        
+        </p> 
+      </div>
+
+      <div class="span2 offset well">        
+        <legend>Goto</legend>
+        <p>
+          <%= button_to "Risks Modelisation", rinits_path, :method => :get, :class => "btn btn-success" %>          
+        </p>        
+      </div>
+    </div>
+  </div>
+
+<!-- </div> -->

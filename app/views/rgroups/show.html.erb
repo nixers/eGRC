@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Group name:</b>
+  <%= @rgroup.group_name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @rgroup.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_rgroup_path(@rgroup) %> |
+<%= link_to 'Back', rgroups_path %>

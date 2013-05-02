@@ -1,0 +1,52 @@
+<h2><%= image_tag "EditedLogo.png" %></h2>
+<br>
+<br>
+<div="container">
+<div ="span12 offset1 well">
+ <div class="tabbable tabs-left"> 
+  <ul class="nav nav-tabs">
+   <!-- <li><a href="#12" data-toogle="tab">Security policy</a></li><br /> -->
+   <li class="active"><a href="#1" data-toggle ="tab">Modules</a></li><br />
+   <li><a href="#2" data-toggle ="tab">Domain Selection</a></li><br />
+   <li><a href="#3" data-toggle ="tab">Dash Board</a></li><br />
+</ul>
+<!-- for Security  -->
+<div class="tab-content" >
+
+  <div class="tab-pane" id="1">
+      <h2>Modules</h2>
+      <%= link_to 'Audit Management' , ainits_path %>
+      <p>Manage governance, risk management, and compliance (GRC)
+         audit planning, staffing, fieldwork, and reporting and coordinate
+         information among teams.
+      </p>
+      <br>
+      <%= link_to 'Risk Managament' ,rinits_path %>
+      <p>Proactively address risk management of your reputation, finances,
+         operations and IT Infrastructure.
+      </p>
+      <br>
+     
+
+   </div>
+   <div class="tab-pane" id="2">
+     <h2>What are your Organization Needs?</h2>
+      <p>The increasing complexity of risks and compliance management
+must not impaired the agility of the Information Systems to fulfill
+business needs, but on the contrary it should be a key element
+that allow stakeholders to be fully informed and such make the
+right decision.
+</p>
+Click <%= link_to "here" , '/question/new' %> to select the controls 
+</ul>
+   </div>
+   <div  class="tab-pane"  id="3">
+    
+   </div>
+
+</div>
+</div>
+</div>
+</div>
+
+

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @revent.title %>
+</p>
+
+<p>
+  <b>Reference:</b>
+  <%= @revent.reference %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @revent.description %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @revent.category %>
+</p>
+
+<p>
+  <b>Period:</b>
+  <%= @revent.period %>
+</p>
+
+<p>
+  <b>Likelihood:</b>
+  <%= @revent.likelihood %>
+</p>
+
+<p>
+  <b>Probability:</b>
+  <%= @revent.probability %>
+</p>
+
+
+<%= link_to 'Edit', edit_revent_path(@revent) %> |
+<%= link_to 'Back', revents_path %>

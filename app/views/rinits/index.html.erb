@@ -1,0 +1,65 @@
+<%= render :partial => 'layouts/header' %>
+<br />
+<br />
+<!-- <div class="container"> -->
+
+  <div class="row">
+    <div class="span11 offset1 well">      
+      <h3>Risks Modelisation</h3>
+      <legend>Risks</legend>
+      
+      <table class="table">
+        <tr>
+          <th>Title</th>
+          <th>Reference</th>    
+          <th>Category</th>
+          <th>Review Period</th>    
+          <th>Expiration Date</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+
+        <% @rinits.each do |rinit| %>
+        <tr>
+          <td><%= rinit.title %></td>
+          <td><%= rinit.reference %></td>    
+          <td><%= rinit.category %></td>
+          <td><%= rinit.review_period %></td>    
+          <td><%= rinit.expiration_date %></td>    
+          <td><%= link_to '', rinit, :class => "icon-list-alt icon-white" %></td>
+          <td><%= link_to '', edit_rinit_path(rinit), :class => "icon-pencil icon-white" %></td>
+          <td><%= link_to '', rinit, method: :delete, data: { confirm: 'Are you sure?' }, :class => "icon-trash icon-white" %></td>
+        </tr>
+        <% end %>
+      </table>
+
+      <br />
+
+      <%= button_to "New", new_rinit_path, :method => :get, :class => "btn btn-primary" %>      
+
+    </div>
+
+
+
+    <div class="row">
+      <div class="span2 offset well">        
+        <legend>Quick Links</legend>
+        <p>
+          <%= link_to 'Causes', rcauses_path %> <br />          
+          <%= link_to 'Events', revents_path %> <br />          
+        </p>        
+      </div>
+
+      <div class="span2 offset well">        
+        <legend>Goto</legend>
+        <p>
+          <%= button_to "Risks Management", rgroups_path, :method => :get, :class => "btn btn-success" %>          
+        </p>        
+      </div>
+    </div>
+  </div>
+
+<!-- </div> -->

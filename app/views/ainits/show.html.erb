@@ -1,0 +1,61 @@
+<%= render :partial => 'layouts/header' %>
+<br />
+<br />
+<div class="span12 offset1 well">
+<legend>View Audit</legend>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Refernce:</b>
+  <%= @ainit.Refernce %>
+</p>
+
+<p>
+  <b>Origin:</b>
+  <%= @ainit.Origin %>
+</p>
+
+<p>
+  <b>Topic:</b>
+  <%= @ainit.Topic %>
+</p>
+
+<p>
+  <b>Standard:</b>
+  <%= @ainit.Standard %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @ainit.Status %>
+</p>
+
+<p>
+  <b>Compliance:</b>
+  <%= @ainit.Compliance %>
+</p>
+
+<p>
+  <b>Context:</b>
+  <%= @ainit.Context %>
+</p>
+
+<p>
+  <b>Objective:</b>
+  <%= @ainit.Objective %>
+</p>
+
+<p>
+  <b>Scope:</b>
+  <%= @ainit.Scope %>
+</p>
+
+<p>
+  <b>Deliverables:</b>
+  <%= @ainit.Deliverables %>
+</p>
+
+</div>
+<%= link_to 'Edit', edit_ainit_path(@ainit) %> |
+<%= link_to 'Back', ainits_path %>
+</div>

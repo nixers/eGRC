@@ -1,0 +1,60 @@
+<%= render :partial => 'layouts/header' %>
+<br />
+<br />
+<div class="span12 offset1 well">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @pinit.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @pinit.description %>
+</p>
+
+<p>
+  <b>Keyword:</b>
+  <%= @pinit.keyword %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @pinit.author %>
+</p>
+
+<p>
+  <b>Class:</b>
+  <%= @pinit.class %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @pinit.type %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%= @pinit.area %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @pinit.version %>
+</p>
+
+<p>
+  <b>Publishdate:</b>
+  <%= @pinit.publishdate %>
+</p>
+
+<p>
+  <b>Revision:</b>
+  <%= @pinit.revision %>
+</p>
+
+
+<%= link_to 'Edit', edit_pinit_path(@pinit) %> |
+<%= link_to 'Back', pinits_path %>
+</div>

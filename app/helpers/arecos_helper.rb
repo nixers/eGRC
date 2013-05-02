@@ -1,0 +1,2 @@
+module ArecosHelper
+end

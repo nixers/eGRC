@@ -1,0 +1,51 @@
+<%= render :partial => 'layouts/header' %>
+<br />
+<br />
+<div class="span12 offset1 well">
+<legend>View Action</legend>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Recommendations:</b>
+  <%= @aactio.Recommendations %>
+</p>
+
+<p>
+  <b>Refernce:</b>
+  <%= @aactio.Refernce %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @aactio.Title %>
+</p>
+
+<p>
+  <b>Descriptions:</b>
+  <%= @aactio.Descriptions %>
+</p>
+
+<p>
+  <b>Externalreference:</b>
+  <%= @aactio.ExternalReference %>
+</p>
+
+<p>
+  <b>Duedate:</b>
+  <%= @aactio.DueDate %>
+</p>
+
+<p>
+  <b>Closeddate:</b>
+  <%= @aactio.ClosedDate %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @aactio.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_aactio_path(@aactio) %> |
+<%= link_to 'Back', aactios_path %>
+</div>

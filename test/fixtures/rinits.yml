@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  reference: MyString
+  description: MyString
+  category: MyString
+  review_period: 1
+  forced_review: MyString
+  likelihood: MyString
+  standard: MyString
+  expiration_date: MyString
+
+two:
+  title: MyString
+  reference: MyString
+  description: MyString
+  category: MyString
+  review_period: 1
+  forced_review: MyString
+  likelihood: MyString
+  standard: MyString
+  expiration_date: MyString

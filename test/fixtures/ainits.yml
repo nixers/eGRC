@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Refernce: MyString
+  Origin: MyString
+  Topic: MyString
+  Standard: MyString
+  Status: MyString
+  Compliance: MyString
+  Context: MyString
+  Objective: MyString
+  Scope: MyString
+  Deliverables: MyString
+
+two:
+  Refernce: MyString
+  Origin: MyString
+  Topic: MyString
+  Standard: MyString
+  Status: MyString
+  Compliance: MyString
+  Context: MyString
+  Objective: MyString
+  Scope: MyString
+  Deliverables: MyString

@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Title: MyString
+  Status: 
+  reference: MyString
+  Primaryt: 
+  Secondaryt: 
+  Verification: 
+  compliance: 
+  Priority: 
+  Severity: 
+  Target: 
+  Closed: 
+  block: MyString
+  refer: MyString
+  duplicate: MyString
+  auditor: MyString
+  auditee: MyString
+  dependency: MyString
+  Description: MyString
+  Verified: 
+  type: 
+  confidential: 
+
+two:
+  Title: MyString
+  Status: 
+  reference: MyString
+  Primaryt: 
+  Secondaryt: 
+  Verification: 
+  compliance: 
+  Priority: 
+  Severity: 
+  Target: 
+  Closed: 
+  block: MyString
+  refer: MyString
+  duplicate: MyString
+  auditor: MyString
+  auditee: MyString
+  dependency: MyString
+  Description: MyString
+  Verified: 
+  type: 
+  confidential: 

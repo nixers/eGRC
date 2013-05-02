@@ -1,0 +1,37 @@
+<%= form_for(@rcrieval) do |f| %>
+  <% if @rcrieval.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rcrieval.errors.count, "error") %> prohibited this rcrieval from being saved:</h2>
+
+      <ul>
+      <% @rcrieval.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :reference %><br />
+    <%= f.text_field :reference %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :category %><br />
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :exp_for_eval %><br />
+    <%= f.text_field :exp_for_eval %>
+  </div>
+  <div class="field">
+    <%= f.label :exp_ans_type %><br />
+    <%= f.text_field :exp_ans_type %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

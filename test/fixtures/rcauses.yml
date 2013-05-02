@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  reference: MyString
+  description: MyString
+  period: 1
+  likelihood: 9.99
+  probability: 9.99
+  occurence_count: 1
+  horizon_start_date: MyString
+  horizon_end_date: MyString
+
+two:
+  title: MyString
+  reference: MyString
+  description: MyString
+  period: 1
+  likelihood: 9.99
+  probability: 9.99
+  occurence_count: 1
+  horizon_start_date: MyString
+  horizon_end_date: MyString

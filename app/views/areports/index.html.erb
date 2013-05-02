@@ -1,0 +1,34 @@
+<%= render :partial => 'layouts/header' %>
+<br />
+<br />
+<div class="row">
+  <div class="span11 offset1 well">
+    <h3>Audit Management</h3>
+    <legend>Reports</legend>
+
+    <table class="table">
+      <tr>
+        <th>Title</th>
+        <th>Status</th>
+        <th>Recommendations</th>
+        <th>Actions</th>
+
+      </tr>
+
+      <% @areports.each do |areport| %>
+      <tr>
+        <td><%= areport.Title %></td>
+        <td><%= areport.Status %></td>
+        <td><%= areport.Recommendations %></td>
+        <td><%= areport.Actions %></td>
+        <td><%= link_to '', areport , :class => "icon-list-alt icon-white", :title => "View" %></td>
+        <td><%= link_to '', areport, method: :delete, data: { confirm: 'Are you sure?' },:class =>"icon-trash icon-white", :title => "Delete"  %></td>
+        <td><%= link_to '', arecos_path, :class => "icon-play icon-white", :title => "Goto Recommendations"%>
+        </tr>
+        <% end %>
+      </table>
+      <br />
+      <%= button_to "New", new_areport_path, :method => :get, :class => "btn btn-primary" %>
+    </div>
+  </div>
+

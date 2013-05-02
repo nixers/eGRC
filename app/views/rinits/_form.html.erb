@@ -1,0 +1,59 @@
+<%= form_for(@rinit) do |f| %>
+<% if @rinit.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@rinit.errors.count, "error") %> prohibited this rinit from being saved:</h2>
+
+  <ul>
+    <% @rinit.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :reference %>
+    <%= f.text_field :reference %>
+  </div>
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :category %>
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :review_period %>
+    <%= f.number_field :review_period %>
+  </div>
+  <div class="field">
+    <%= f.label :forced_review %>
+    <%= f.text_field :forced_review %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :likelihood %>
+    <%= f.text_field :likelihood %>
+  </div>
+  <div class="field">
+    <%= f.label :standard %>
+    <%= f.text_field :standard %>
+  </div>
+  <div class="field">
+    <%= f.label :expiration_date %>
+    <%= f.text_field :expiration_date %>
+  </div>
+
+<div class="actions">
+  <%= f.submit %>
+</div>
+<% end %>
+
+

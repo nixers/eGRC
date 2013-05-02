@@ -1,0 +1,40 @@
+<%= form_for(@areport) do |f| %>
+  <% if @areport.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@areport.errors.count, "error") %> prohibited this report from being saved:</h2>
+
+      <ul>
+      <% @areport.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="span3">
+    <%= f.label :Title %>
+    <%= f.text_field :Title %>
+  
+    <%= f.label :Source %>
+    <%= f.text_field :Source %>
+  
+    <%= f.label :Duedate %>
+    <%= f.text_field :Duedate %>
+  
+    <%= f.label :Status %>
+    <%= f.text_field :Status %>
+  </div>
+  <div class="span6">
+    <%= f.label :Recommendations %>
+    <%= f.number_field :Recommendations %>
+  
+    <%= f.label :Actions %>
+    <%= f.number_field :Actions %>
+
+    <%= f.label :Summary %>
+     <textarea id="message" name="message" class="span6" placeholder="Your Message" rows="5"></textarea>
+</div>
+  <div class="actions">
+    <%= f.submit  "Create"%>
+  </div>
+<% end %>

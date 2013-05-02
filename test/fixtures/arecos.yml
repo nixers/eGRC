@@ -1,0 +1,73 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Title: MyString
+  Atitle: MyString
+  Dtitle: MyString
+  Ctitle: MyString
+  status: MyString
+  auditor: MyString
+  reference: MyString
+  primary: MyString
+  secondary: MyString
+  compliance: MyString
+  verification: MyString
+  priority: MyString
+  severity: MyString
+  target: 2013-04-22
+  closed: 2013-04-22
+  auditee: MyString
+  atartget: 2013-04-22
+  apriority: MyString
+  aseverity: MyString
+  dependent: MyString
+  duplicate: MyString
+  blocked: MyString
+  refer: MyString
+  org: MyString
+  level: MyString
+  ctarget: MyString
+  type: 
+  kind: MyString
+  ddtitle: MyString
+  dreference: MyString
+  description: MyString
+  verified: MyString
+  confidential: MyString
+  dtype: MyString
+
+two:
+  Title: MyString
+  Atitle: MyString
+  Dtitle: MyString
+  Ctitle: MyString
+  status: MyString
+  auditor: MyString
+  reference: MyString
+  primary: MyString
+  secondary: MyString
+  compliance: MyString
+  verification: MyString
+  priority: MyString
+  severity: MyString
+  target: 2013-04-22
+  closed: 2013-04-22
+  auditee: MyString
+  atartget: 2013-04-22
+  apriority: MyString
+  aseverity: MyString
+  dependent: MyString
+  duplicate: MyString
+  blocked: MyString
+  refer: MyString
+  org: MyString
+  level: MyString
+  ctarget: MyString
+  type: 
+  kind: MyString
+  ddtitle: MyString
+  dreference: MyString
+  description: MyString
+  verified: MyString
+  confidential: MyString
+  dtype: MyString

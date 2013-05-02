@@ -1,0 +1,28 @@
+<%= render :partial => 'layouts/header' %>
+<br />
+<br />
+  <div class="row">
+    <div class="span12 offset1 well">
+
+      <h3>Audit Management</h3>
+      <legend>Actions</legend>
+      <table class="table">
+        <tr>
+          <th>Title</th>
+          <th>Due Date</th>
+          <th>Status</th>
+        </tr>
+
+        <% @aactios.each do |aactio| %>
+        <tr>
+          <td><%= aactio.Title %></td>
+          <td><%= aactio.DueDate %></td>
+          <td><%= aactio.status %></td>
+          <td><%= link_to '', aactio ,:class => "icon-list-alt icon-white", :title => "View"%></td>
+          <td><%= link_to '', aactio, method: :delete, data: { confirm: 'Are you sure?' }, :class =>"icon-trash icon-white", :title => "Delete" %></td>
+        </tr>
+        <% end %>
+      </table>
+      <br />
+      <%= button_to "New", new_aactio_path, :method => :get, :class => "btn btn-primary" %>
+  </div>

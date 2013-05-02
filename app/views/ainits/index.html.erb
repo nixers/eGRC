@@ -1,0 +1,40 @@
+<%= render :partial => 'layouts/header' %>
+<br />
+<br />
+  <div class="row">
+    <div class="span12 offset1 well">
+        <h3>Audit Management</h3>
+        <legend>Audits</legend>
+        <table class="table ">
+          <tr>
+            <th>Reference</th>
+            <th>Origin</th>
+            <th>Topic</th>
+            <th>Standard</th>
+            <th>Status</th>
+            <th>Compliance</th>
+        </tr>
+
+        <% @ainits.each do |ainit| %>
+        <tr >
+            <td><%= ainit.Refernce %></td>
+            <td><%= ainit.Origin %></td>
+            <td><%= ainit.Topic %></td>
+            <td><%= ainit.Standard %></td>
+            <td><%= ainit.Status %></td>
+            <td><%= ainit.Compliance %></td>
+            <td><%= link_to '', ainit, :class => "icon-list-alt icon-white", :title => "View"%></td>
+            <td><%= link_to '', ainit, method: :delete, data: { confirm: 'Are you sure?' }, :class =>"icon-trash icon-white", :title => "Delete" %></td>
+            <td><%= link_to '', areports_path , :class => "icon-play icon-white", :title => "Goto Reports" %>
+
+                <% end %>
+            </table>
+            <br />
+            <%= button_to "New", new_ainit_path, :method => :get, :class => "btn btn-primary" %>
+        </div>         
+      </p>        
+  </div>
+</div>
+</div>
+
+</div>

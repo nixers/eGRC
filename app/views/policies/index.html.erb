@@ -1,0 +1,45 @@
+<%= render :partial => 'layouts/header' %>
+<br />
+<br />
+  <div class="row">
+    <div class="span12 offset1 well">
+<h1>Policies</h1>
+
+<table class="table ">
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Keyword</th>
+    <th>Author</th>
+    <th>Class</th>
+    <th>Type</th>
+    <th>Area</th>
+    <th>Version</th>
+    <th>Publishdate</th>
+    <th>Revision</th>
+   
+  </tr>
+
+<% @policies.each do |policy| %>
+  <tr>
+    <td><%= policy.name %></td>
+    <td><%= policy.description %></td>
+    <td><%= policy.keyword %></td>
+    <td><%= policy.author %></td>
+    <td><%= policy.class %></td>
+    <td><%= policy.type %></td>
+    <td><%= policy.area %></td>
+    <td><%= policy.version %></td>
+    <td><%= policy.publishdate %></td>
+    <td><%= policy.revision %></td>
+    <td><%= link_to 'Show', policy,:class => "icon-list-alt icon-white" %></td>
+    <td><%= link_to 'Destroy', policy,:class =>"icon-trash icon-white", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<%= button_to "New",new_policy_path, :method => :get, :class => "btn btn-primary" %>
+
+</div>
+</div>

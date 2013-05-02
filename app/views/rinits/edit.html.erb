@@ -1,0 +1,32 @@
+<div class="container">
+
+  <div class="row">
+    <div class="span11 offset1 well">            
+      <legend>Edit Risk</legend>
+      <%= render 'form' %>			
+	  <%= link_to 'Show', @rinit %>|
+    <%= link_to 'Back', rinits_path %>
+
+    </div>
+
+
+
+    <div class="row">
+      <div class="span2 offset well">        
+        <legend>Quick Links</legend>
+        <p>
+          <%= link_to 'Causes', rcauses_path %> <br />          
+          <%= link_to 'Events', revents_path %> <br />          
+        </p>        
+      </div>
+
+      <div class="span2 offset well">        
+        <legend>Goto</legend>
+        <p>
+          <%= button_to "Risks Management", new_rinit_path, :method => :get, :class => "btn btn-success" %>
+        </p>        
+      </div>
+    </div>
+  </div>
+
+</div>

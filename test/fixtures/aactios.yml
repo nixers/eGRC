@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Recommendations: MyString
+  Refernce: MyString
+  Title: MyString
+  Descriptions: MyString
+  ExternalReference: MyString
+  DueDate: MyString
+  ClosedDate: MyString
+  status: MyString
+
+two:
+  Recommendations: MyString
+  Refernce: MyString
+  Title: MyString
+  Descriptions: MyString
+  ExternalReference: MyString
+  DueDate: MyString
+  ClosedDate: MyString
+  status: MyString

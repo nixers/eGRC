@@ -1,0 +1,25 @@
+<%= form_for(@rgroup) do |f| %>
+  <% if @rgroup.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rgroup.errors.count, "error") %> prohibited this rgroup from being saved:</h2>
+
+      <ul>
+      <% @rgroup.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :group_name %><br />
+    <%= f.text_field :group_name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

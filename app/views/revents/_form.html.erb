@@ -1,0 +1,45 @@
+<%= form_for(@revent) do |f| %>
+  <% if @revent.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@revent.errors.count, "error") %> prohibited this revent from being saved:</h2>
+
+      <ul>
+      <% @revent.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :reference %><br />
+    <%= f.text_field :reference %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :category %><br />
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :period %><br />
+    <%= f.number_field :period %>
+  </div>
+  <div class="field">
+    <%= f.label :likelihood %><br />
+    <%= f.text_field :likelihood %>
+  </div>
+  <div class="field">
+    <%= f.label :probability %><br />
+    <%= f.text_field :probability %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,49 @@
+
+<%= form_for(@aactio) do |f| %>
+  <% if @aactio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@aactio.errors.count, "error") %> prohibited this aactio from being saved:</h2>
+
+      <ul>
+      <% @aactio.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <%= f.label :Recommendations %>
+    <%= f.text_field :Recommendations %>
+ 
+    <%= f.label :Refernce %>
+    <%= f.text_field :Refernce %>
+  
+
+    <%= f.label :Title %>
+
+    <%= f.text_field :Title %>
+  
+
+    <%= f.label :Descriptions %>
+
+    <%= f.text_field :Descriptions %>
+  
+
+    <%= f.label :ExternalReference %>
+
+    <%= f.text_field :ExternalReference %>
+
+
+    <%= f.label :DueDate %>
+   <%= f.text_field :DueDate %>
+  
+    <%= f.label :ClosedDate %>
+    <%= f.text_field :ClosedDate %>
+ 
+    <%= f.label :status %>
+    <%= f.text_field :status %>
+  
+  <div class="actions">
+    <%= f.submit "Create"%>
+  </div>
+<% end %>

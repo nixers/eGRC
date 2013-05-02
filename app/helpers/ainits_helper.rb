@@ -1,0 +1,2 @@
+module AinitsHelper
+end
